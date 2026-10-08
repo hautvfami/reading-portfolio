@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "owner": "hautvfami",
-  "generatedAt": "2026-10-08T03:36:51.313839Z",
-  "totalBooks": 2,
+  "generatedAt": "2026-10-08T03:38:05.688246Z",
+  "totalBooks": 3,
   "books": [
     {
       "id": "60579386-c7e5-400f-a6db-5e1b46aa8c0f",
@@ -18,6 +18,21 @@
         "scienceFiction"
       ],
       "coverImage": "covers/60579386-c7e5-400f-a6db-5e1b46aa8c0f.jpg"
+    },
+    {
+      "id": "dd0b63a8-7a92-43b1-b982-1df23022a82a",
+      "title": "The Time Machine",
+      "author": "H. G. Wells",
+      "publisher": "Standard Ebooks",
+      "languageCode": "en-GB",
+      "description": "A mysterious inventor travels to a land far off in time.",
+      "publishedAt": "2014-05-25T07:00:00.000",
+      "chapterCount": 18,
+      "readingProgress": 0.0,
+      "tags": [
+        "fantasy"
+      ],
+      "coverImage": "covers/dd0b63a8-7a92-43b1-b982-1df23022a82a.jpg"
     },
     {
       "id": "b2e74886-cf89-4634-afd4-7f129895995d",
