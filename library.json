@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "owner": "hautvfami",
-  "generatedAt": "2026-10-08T11:58:30.492604Z",
-  "totalBooks": 2,
+  "generatedAt": "2026-10-08T11:58:45.847040Z",
+  "totalBooks": 3,
   "books": [
     {
       "id": "60579386-c7e5-400f-a6db-5e1b46aa8c0f",
@@ -33,6 +33,21 @@
         "fantasy"
       ],
       "coverImage": "covers/dd0b63a8-7a92-43b1-b982-1df23022a82a.jpg"
+    },
+    {
+      "id": "e6a69518-17fa-46be-8076-6ca446255d76",
+      "title": "Meditations",
+      "author": "Marcus Aurelius",
+      "publisher": "Standard Ebooks",
+      "languageCode": "en-GB",
+      "description": "The personal diary of the Roman Emperor, in which he lays out his thoughts and philosophical musings on the Stoic philosophy and way of life.",
+      "publishedAt": "2014-05-25T07:00:00.000",
+      "chapterCount": 17,
+      "readingProgress": 0.0,
+      "tags": [
+        "history"
+      ],
+      "coverImage": "covers/e6a69518-17fa-46be-8076-6ca446255d76.jpg"
     }
   ]
 }
