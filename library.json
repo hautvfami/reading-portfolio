@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "owner": "hautvfami",
-  "generatedAt": "2026-10-08T03:36:38.782032Z",
-  "totalBooks": 1,
+  "generatedAt": "2026-10-08T03:36:51.313839Z",
+  "totalBooks": 2,
   "books": [
     {
       "id": "60579386-c7e5-400f-a6db-5e1b46aa8c0f",
@@ -18,6 +18,19 @@
         "scienceFiction"
       ],
       "coverImage": "covers/60579386-c7e5-400f-a6db-5e1b46aa8c0f.jpg"
+    },
+    {
+      "id": "b2e74886-cf89-4634-afd4-7f129895995d",
+      "title": "Romeo and Juliet",
+      "author": "William Shakespeare",
+      "languageCode": "en",
+      "publishedAt": "1998-11-01T07:00:00.000",
+      "chapterCount": 35,
+      "readingProgress": 0.0,
+      "tags": [
+        "fiction"
+      ],
+      "coverImage": "covers/b2e74886-cf89-4634-afd4-7f129895995d.jpg"
     }
   ]
 }
