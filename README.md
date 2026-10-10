@@ -1,4 +1,4 @@
-# 📚 @hautvfami's Reading Portfolio
+# 📚 Hau Tran's Reading Portfolio
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Reading_Website-FFC928?style=flat-square&logo=github)](https://hautvfami.github.io/reading-portfolio/)
 [![Download on App Store](https://img.shields.io/badge/Download_on-App_Store-black?style=flat-square&logo=apple)](https://apps.apple.com/us/app/epubtidy-epub-editor-repair/id6795767122?pt=127002958&ct=github&mt=8)
