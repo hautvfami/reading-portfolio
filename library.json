@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "owner": "hautvfami",
-  "generatedAt": "2026-10-10T03:19:27.096165Z",
-  "totalBooks": 3,
+  "generatedAt": "2026-10-10T05:22:51.416919Z",
+  "totalBooks": 4,
   "books": [
     {
       "id": "60579386-c7e5-400f-a6db-5e1b46aa8c0f",
@@ -43,12 +43,28 @@
       "description": "The personal diary of the Roman Emperor, in which he lays out his thoughts and philosophical musings on the Stoic philosophy and way of life.",
       "publishedAt": "2014-05-25T07:00:00.000",
       "chapterCount": 17,
-      "readingProgress": 0.02158273381294964,
+      "readingProgress": 0.034864416159380185,
       "tags": [
         "history"
       ],
       "coverImage": "covers/e6a69518-17fa-46be-8076-6ca446255d76.jpg",
-      "lastReadAt": "2026-10-10T10:15:17.000"
+      "lastReadAt": "2026-10-10T12:22:08.000"
+    },
+    {
+      "id": "bf5828da-7249-4c10-a8db-b81cc5cb7436",
+      "title": "The Old Man and the Sea",
+      "author": "Ernest Hemingway",
+      "publisher": "epubBooks Classics",
+      "languageCode": "en",
+      "description": "\"The Old Man and the Sea\" is a novel by Ernest Hemingway and published in 1952. It tells the story of Santiago, an aged, experienced but unlucky Cuban fisherman. The story details his epic struggle to catch a giant marlin far out in the Gulf Stream.\n\nThe book studies perseverance and the battles between humanity and nature. It explores honor, pride, and the cycle of life and death. The Old Man and the Sea was a critical and commercial success, winning the Pulitzer Prize for Fiction in 1953 and helping Hemingway win the Nobel Prize in Literature in 1954.",
+      "publishedAt": "2014-06-13T07:00:00.000",
+      "chapterCount": 1,
+      "readingProgress": 0.1302317537184365,
+      "tags": [
+        "fiction"
+      ],
+      "coverImage": "covers/bf5828da-7249-4c10-a8db-b81cc5cb7436.jpg",
+      "lastReadAt": "2026-10-09T20:37:53.000"
     }
   ]
 }
