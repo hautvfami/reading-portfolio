@@ -25,290 +25,952 @@
 {"@context":"https://schema.org","@type":"CollectionPage","name":"hautvfami's Reading Portfolio | Epub Tidy","description":"Explore 4 curated books in hautvfami's personal reading library, managed by Epub Tidy.","url":"https://hautvfami.github.io/reading-portfolio/","mainEntity":{"@type":"ItemList","numberOfItems":4,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Book","name":"Phát Minh Cuối Cùng","author":{"@type":"Person","name":"James Barrat, Chu Kiên (dịch), Chu Kiên (dịch)"},"description":"<div>\n<p>Trí tuệ nhân tạo giúp bạn chọn những cuốn sách bạn mua, những bộ phim bạn xem, và thậm chí những người bạn hẹn hò. Nó có trong điện thoại thông minh của bạn và tới đây sẽ lái chiếc xe của bạn. Nó thực hiện hầu hết các giao dịch trên Wall Street, và kiểm soát cơ sở hạ tầng điện, nước và giao thông. Nhưng trí tuệ nhân tạo cũng có thể đe dọa sự tồn tại của con người.</p>\n<p>Chỉ trong một thập kỷ, AI có thể đạt ngang ngửa và sau đó vượt qua trí thông minh của con người. Các công ty và cơ quan chính phủ đang rót hàng tỷ đô-la để thu được một AI với trí thông minh ở cấp độ con người. Một khi AI đã phát triển đến mức này, các nhà khoa học lập luận rằng, nó sẽ có những động lực sống giống như con người. Chúng ta có thể sẽ buộc phải cạnh tranh với một kẻ thù ngoan cường hơn, mạnh mẽ hơn và khác biệt hơn chúng ta tưởng tượng.</p>\n<p>Thông qua việc phỏng vấn với những người có tầm nhìn xa về công nghệ, các cơ quan giám sát công nghiệp, và những hệ thống AI, cuốn sách Phát minh cuối cùng khám phá những nguy cơ của việc theo đuổi AI cao cấp. Cho đến nay, trí thông minh của con người không có đối thủ. Liệu chúng ta có thể cùng tồn tại với những thứ mà trí tuệ của chúng ta trở nên nhỏ bé hơn hẳn? Và liệu chúng sẽ cho phép chúng ta cùng tồn tại?</p></div>","publisher":"Thế Giới"}},{"@type":"ListItem","position":2,"item":{"@type":"Book","name":"The Time Machine","author":{"@type":"Person","name":"H. G. Wells"},"description":"A mysterious inventor travels to a land far off in time.","publisher":"Standard Ebooks"}},{"@type":"ListItem","position":3,"item":{"@type":"Book","name":"Meditations","author":{"@type":"Person","name":"Marcus Aurelius"},"description":"The personal diary of the Roman Emperor, in which he lays out his thoughts and philosophical musings on the Stoic philosophy and way of life.","publisher":"Standard Ebooks"}},{"@type":"ListItem","position":4,"item":{"@type":"Book","name":"The Old Man and the Sea","author":{"@type":"Person","name":"Ernest Hemingway"},"description":"\"The Old Man and the Sea\" is a novel by Ernest Hemingway and published in 1952. It tells the story of Santiago, an aged, experienced but unlucky Cuban fisherman. The story details his epic struggle to catch a giant marlin far out in the Gulf Stream.\n\nThe book studies perseverance and the battles between humanity and nature. It explores honor, pride, and the cycle of life and death. The Old Man and the Sea was a critical and commercial success, winning the Pulitzer Prize for Fiction in 1953 and helping Hemingway win the Nobel Prize in Literature in 1954.","publisher":"epubBooks Classics"}}]}}
   </script>
 
-  <!-- Google Fonts & Modern Styling -->
+  <!-- Google Fonts: Manrope (sans), Newsreader (editorial serif), Outfit (headings) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #0d1117;
-      --card-bg: rgba(22, 27, 34, 0.85);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --text-main: #f0f6fc;
-      --text-muted: #8b949e;
-      --accent: #58a6ff;
-      --accent-glow: rgba(88, 166, 255, 0.25);
-      --progress-bg: rgba(255, 255, 255, 0.1);
-      --progress-fill: #2ea043;
-      --tag-bg: rgba(56, 139, 253, 0.15);
-      --tag-text: #79c0ff;
-    }
+  --bg: #FFFCF5;
+  --bg-parchment: #F8F4E8;
+  --card-bg: #FFFFFF;
+  --card-border: #E1DDD4;
+  --card-border-hover: #FFC928;
+  --text-main: #20201E;
+  --text-muted: #68655F;
+  --text-subtle: #8C887E;
+  --accent: #FFC928;
+  --accent-soft: #FFF3B0;
+  --accent-hover: #E5B21E;
+  --success: #34785B;
+  --success-soft: #EAF3EE;
+  --progress-bg: #F0EDE6;
+  --shadow-xs: 0 1px 3px rgba(32, 32, 30, 0.05);
+  --shadow-sm: 0 4px 12px rgba(32, 32, 30, 0.06);
+  --shadow-md: 0 10px 30px rgba(32, 32, 30, 0.08);
+  --shadow-lg: 0 20px 50px rgba(32, 32, 30, 0.12);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg);
-      color: var(--text-main);
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2.5rem 1.5rem;
-      flex: 1;
-      width: 100%;
-    }
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
 
-    header {
-      margin-bottom: 3rem;
-      text-align: center;
-    }
+/* Top Glass Header */
+.glass-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 252, 245, 0.88);
+  border-bottom: 1px solid var(--card-border);
+  transition: all 0.2s ease;
+}
 
-    .badge-user {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.35rem 1rem;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--card-border);
-      border-radius: 999px;
-      font-size: 0.875rem;
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
-    h1 {
-      font-family: 'Outfit', sans-serif;
-      font-size: clamp(2rem, 5vw, 3.25rem);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #ffffff 30%, #8b949e 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 0.75rem;
-    }
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text-main);
+}
 
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 1.125rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
+.brand-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--accent);
+  box-shadow: var(--shadow-xs);
+  flex-shrink: 0;
+}
 
-    .stats-row {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 2.5rem;
-    }
+.brand-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  border: 1.5px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: var(--shadow-xs);
+  flex-shrink: 0;
+}
 
-    .stat-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 1rem 1.75rem;
-      min-width: 140px;
-      text-align: center;
-      backdrop-filter: blur(12px);
-    }
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
 
-    .stat-number {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--accent);
-    }
+.brand-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
 
-    .stat-label {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
+.brand-subtitle {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
 
-    .search-box {
-      max-width: 500px;
-      margin: 0 auto 3rem;
-      position: relative;
-    }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 
-    .search-input {
-      width: 100%;
-      padding: 0.875rem 1.25rem;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      color: #fff;
-      font-size: 1rem;
-      outline: none;
-      transition: all 0.2s ease;
-    }
+.header-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.85rem;
+  background: var(--bg-parchment);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
 
-    .search-input:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-glow);
-    }
+.header-github-link:hover {
+  background: var(--card-bg);
+  border-color: var(--text-subtle);
+  transform: translateY(-1px);
+}
 
-    .books-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 2rem;
-    }
+.header-github-link svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
 
-    .book-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-      backdrop-filter: blur(8px);
-    }
+.btn-appstore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.15rem;
+  background: var(--accent);
+  color: var(--text-main);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s ease;
+}
 
-    .book-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-    }
+.btn-appstore:hover {
+  background: var(--accent-hover);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
 
-    .cover-container {
-      height: 280px;
-      background: rgba(0, 0, 0, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      position: relative;
-    }
+.btn-appstore svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
 
-    .cover-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  flex: 1;
+  width: 100%;
+}
 
-    .book-card:hover .cover-img {
-      transform: scale(1.03);
-    }
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
 
-    .cover-placeholder {
-      font-family: 'Outfit', sans-serif;
-      font-size: 2.5rem;
-      color: var(--text-muted);
-      opacity: 0.4;
-    }
+.user-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.95rem;
+  background: var(--bg-parchment);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 1.1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
 
-    .book-info {
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
+.user-pill:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
 
-    .book-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      line-height: 1.35;
-      margin-bottom: 0.35rem;
-      color: #fff;
-    }
+.user-pill svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
 
-    .book-author {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 0.85rem;
-    }
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text-main);
+  margin-bottom: 0.85rem;
+}
 
-    .tags-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-      margin-bottom: 1rem;
-    }
+h1 span {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #805B00;
+}
 
-    .tag-chip {
-      font-size: 0.72rem;
-      background: var(--tag-bg);
-      color: var(--tag-text);
-      padding: 0.15rem 0.5rem;
-      border-radius: 6px;
-      font-weight: 500;
-    }
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 2rem;
+}
 
-    .progress-section {
-      margin-top: auto;
-      padding-top: 0.75rem;
-    }
+/* Stats */
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
 
-    .progress-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-bottom: 0.35rem;
-    }
+.stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.5rem;
+  min-width: 130px;
+  text-align: center;
+  box-shadow: var(--shadow-xs);
+}
 
-    .progress-bar {
-      height: 6px;
-      background: var(--progress-bg);
-      border-radius: 999px;
-      overflow: hidden;
-    }
+.stat-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.2;
+}
 
-    .progress-fill {
-      height: 100%;
-      background: var(--progress-fill);
-      border-radius: 999px;
-      transition: width 0.3s ease;
-    }
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
 
-    footer {
-      border-top: 1px solid var(--card-border);
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-top: 4rem;
-    }
+/* Search & Filter Controls */
+.controls-wrapper {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
 
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 600;
-    }
+.search-box {
+  width: 100%;
+  position: relative;
+}
 
-    footer a:hover {
-      text-decoration: underline;
-    }
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-subtle);
+  pointer-events: none;
+}
 
-    .empty-state {
-      text-align: center;
-      padding: 4rem 1rem;
-      color: var(--text-muted);
-      display: none;
-    }
+.search-input {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 2.85rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 201, 40, 0.25);
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--bg-parchment);
+  padding: 0.25rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--card-border);
+}
+
+.filter-tab {
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab.active {
+  background: var(--card-bg);
+  color: var(--text-main);
+  box-shadow: var(--shadow-xs);
+}
+
+/* Books Grid */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+
+.book-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xs);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.cover-container {
+  aspect-ratio: 480 / 706;
+  background: var(--bg-parchment);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.book-card:hover .cover-img {
+  transform: scale(1.03);
+}
+
+.cover-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #F8F4E8 0%, #EFE8D6 100%);
+}
+
+.cover-fallback-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cover-fallback-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.progress-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-xs);
+}
+
+.badge-finished {
+  background: var(--success);
+  color: #FFFFFF;
+}
+
+.badge-reading {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-main);
+  border: 1px solid var(--card-border);
+}
+
+.book-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.book-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.book-author {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.book-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.tag-chip {
+  font-size: 0.7rem;
+  background: var(--bg-parchment);
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+}
+
+.progress-section {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: var(--progress-bg);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: var(--radius-pill);
+  transition: width 0.3s ease;
+}
+
+.progress-fill.completed {
+  background: var(--success);
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: var(--text-muted);
+  display: none;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Modal / Detail Drawer */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(32, 32, 30, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-backdrop.open {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-xl);
+  max-width: 640px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  padding: 2.25rem 2rem;
+  position: relative;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-backdrop.open .modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: var(--bg-parchment);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.modal-close:hover {
+  background: var(--card-border);
+  transform: rotate(90deg);
+}
+
+.modal-body {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+.modal-cover-wrapper {
+  width: 130px;
+  aspect-ratio: 480 / 706;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-parchment);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+.modal-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-cover-fallback {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: var(--bg-parchment);
+}
+
+.modal-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.modal-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.modal-status-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+}
+
+.modal-status-badge.finished {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.modal-status-badge.reading {
+  background: var(--accent-soft);
+  color: #805B00;
+}
+
+.modal-publisher-badge {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: var(--bg-parchment);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--card-border);
+}
+
+.modal-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+
+.modal-author {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.15rem;
+}
+
+.modal-progress-box {
+  background: var(--bg-parchment);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.35rem;
+}
+
+.modal-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.45rem;
+}
+
+.modal-description-section {
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.modal-section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.modal-description-text {
+  font-size: 0.92rem;
+  color: var(--text-main);
+  line-height: 1.7;
+  white-space: pre-line;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.modal-description-empty {
+  font-size: 0.88rem;
+  color: var(--text-subtle);
+  font-style: italic;
+}
+
+/* Compact Promo Strip */
+.promo-compact {
+  margin-top: 3.5rem;
+  background: var(--bg-parchment);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 0.95rem 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.promo-compact:hover {
+  border-color: var(--accent);
+}
+
+.promo-compact-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.promo-compact-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.65rem;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.promo-compact-text {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.promo-compact-text a {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+.promo-compact-text a:hover {
+  color: #805B00;
+}
+
+.btn-appstore-compact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.95rem;
+  background: var(--accent);
+  color: var(--text-main);
+  border-radius: var(--radius-md);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-appstore-compact:hover {
+  background: var(--accent-hover);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.btn-appstore-compact svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--card-border);
+  background: var(--card-bg);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 4rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+footer a:hover {
+  color: #805B00;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .header-inner { padding: 0.75rem 1rem; }
+  .container { padding: 1.5rem 1rem; }
+  .books-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .book-info { padding: 0.85rem; }
+  .book-title { font-size: 1rem; }
+  .book-author { font-size: 0.78rem; margin-bottom: 0.5rem; }
+  .tags-list { display: none; }
+  .promo-compact {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  .btn-appstore-compact {
+    align-self: flex-start;
+  }
+  .modal-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .modal-cover-wrapper {
+    width: 110px;
+  }
+  .modal-badges, .modal-tags {
+    justify-content: center;
+  }
+  .modal-card {
+    padding: 1.75rem 1.25rem;
+  }
+  .modal-description-text {
+    text-align: left;
+  }
+}
   </style>
 </head>
 <body>
+  <!-- Header -->
+  <header class="glass-header">
+    <div class="header-inner">
+      <a class="brand-link" href="https://epub.navist.uk" target="_blank" rel="noopener">
+        <img class="brand-avatar" src="https://github.com/hautvfami.png?size=80" alt="@hautvfami" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="brand-icon" style="display: none;">📖</div>
+        <div class="brand-text">
+          <span class="brand-title">EpubTidy</span>
+          <span class="brand-subtitle">Reading Portfolio</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="https://github.com/hautvfami/reading" target="_blank" rel="noopener" class="header-github-link" title="View repository on GitHub">
+          <svg viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
   <div class="container">
-    <header>
-      <div class="badge-user">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+    <!-- Hero -->
+    <section class="hero">
+      <a href="https://github.com/hautvfami" target="_blank" rel="noopener" class="user-pill" title="View GitHub profile">
+        <svg viewBox="0 0 16 16">
           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
         </svg>
         <span>@hautvfami</span>
-      </div>
-      <h1>Personal Reading Portfolio</h1>
-      <p class="subtitle">A living library of books, curated annotations, and reading progress.</p>
+      </a>
+      <h1>Personal Reading <span>Portfolio</span></h1>
+      <p class="subtitle">A living bookshelf of books, curated annotations, and reading progress.</p>
 
       <div class="stats-row">
         <div class="stat-card">
@@ -317,7 +979,7 @@
         </div>
         <div class="stat-card">
           <div class="stat-number">2</div>
-          <div class="stat-label">In Progress</div>
+          <div class="stat-label">Reading Now</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">0</div>
@@ -325,85 +987,355 @@
         </div>
       </div>
 
-      <div class="search-box">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search books by title, author, or genre…" />
+      <div class="controls-wrapper">
+        <div class="search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search books by title, author, or tag…" aria-label="Search books" />
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All (4)</button>
+          <button class="filter-tab" data-filter="reading">In Progress (2)</button>
+          <button class="filter-tab" data-filter="completed">Completed (0)</button>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <div class="books-grid" id="booksGrid"></div>
-    <div class="empty-state" id="emptyState">No books match your search.</div>
+    <!-- Books Grid (Pre-rendered for Instant FCP & Googlebot SEO) -->
+    <main class="books-grid" id="booksGrid">    <article class="book-card" tabindex="0" data-id="60579386-c7e5-400f-a6db-5e1b46aa8c0f">
+      <div class="cover-container">
+        <img class="cover-img" src="covers/60579386-c7e5-400f-a6db-5e1b46aa8c0f.jpg" alt="Phát Minh Cuối Cùng" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="cover-fallback" style="display:none;">
+          <span class="cover-fallback-icon">📖</span>
+          <span class="cover-fallback-title">Phát Minh Cuối Cùng</span>
+        </div>
+        
+      </div>
+      <div class="book-info">
+        <h3 class="book-title">Phát Minh Cuối Cùng</h3>
+        <div class="book-author">James Barrat, Chu Kiên (dịch), Chu Kiên (dịch)</div>
+        <p class="book-desc">&lt;div&gt;
+&lt;p&gt;Trí tuệ nhân tạo giúp bạn chọn những cuốn sách bạn mua, những bộ phim bạn xem, và thậm chí những người bạn hẹn hò. Nó có trong điện thoại thông minh của bạn và tới đây sẽ lái chiếc xe của bạn. Nó thực hiện hầu hết các giao dịch trên Wall Street, và kiểm soát cơ sở hạ tầng điện, nước và giao thông. Nhưng trí tuệ nhân tạo cũng có thể đe dọa sự tồn tại của con người.&lt;/p&gt;
+&lt;p&gt;Chỉ trong một thập kỷ, AI có thể đạt ngang ngửa và sau đó vượt qua trí thông minh của con người. Các công ty và cơ quan chính phủ đang rót hàng tỷ đô-la để thu được một AI với trí thông minh ở cấp độ con người. Một khi AI đã phát triển đến mức này, các nhà khoa học lập luận rằng, nó sẽ có những động lực sống giống như con người. Chúng ta có thể sẽ buộc phải cạnh tranh với một kẻ thù ngoan cường hơn, mạnh mẽ hơn và khác biệt hơn chúng ta tưởng tượng.&lt;/p&gt;
+&lt;p&gt;Thông qua việc phỏng vấn với những người có tầm nhìn xa về công nghệ, các cơ quan giám sát công nghiệp, và những hệ thống AI, cuốn sách Phát minh cuối cùng khám phá những nguy cơ của việc theo đuổi AI cao cấp. Cho đến nay, trí thông minh của con người không có đối thủ. Liệu chúng ta có thể cùng tồn tại với những thứ mà trí tuệ của chúng ta trở nên nhỏ bé hơn hẳn? Và liệu chúng sẽ cho phép chúng ta cùng tồn tại?&lt;/p&gt;&lt;/div&gt;</p>
+        <div class="tags-list"><span class="tag-chip">scienceFiction</span></div>
+        <div class="progress-section">
+          <div class="progress-meta">
+            <span>Reading Progress</span>
+            <span>0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill " style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="book-card" tabindex="0" data-id="dd0b63a8-7a92-43b1-b982-1df23022a82a">
+      <div class="cover-container">
+        <img class="cover-img" src="covers/dd0b63a8-7a92-43b1-b982-1df23022a82a.jpg" alt="The Time Machine" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="cover-fallback" style="display:none;">
+          <span class="cover-fallback-icon">📖</span>
+          <span class="cover-fallback-title">The Time Machine</span>
+        </div>
+        
+      </div>
+      <div class="book-info">
+        <h3 class="book-title">The Time Machine</h3>
+        <div class="book-author">H. G. Wells</div>
+        <p class="book-desc">A mysterious inventor travels to a land far off in time.</p>
+        <div class="tags-list"><span class="tag-chip">fantasy</span></div>
+        <div class="progress-section">
+          <div class="progress-meta">
+            <span>Reading Progress</span>
+            <span>0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill " style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="book-card" tabindex="0" data-id="e6a69518-17fa-46be-8076-6ca446255d76">
+      <div class="cover-container">
+        <img class="cover-img" src="covers/e6a69518-17fa-46be-8076-6ca446255d76.jpg" alt="Meditations" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="cover-fallback" style="display:none;">
+          <span class="cover-fallback-icon">📖</span>
+          <span class="cover-fallback-title">Meditations</span>
+        </div>
+        <span class="progress-badge badge-reading">5%</span>
+      </div>
+      <div class="book-info">
+        <h3 class="book-title">Meditations</h3>
+        <div class="book-author">Marcus Aurelius</div>
+        <p class="book-desc">The personal diary of the Roman Emperor, in which he lays out his thoughts and philosophical musings on the Stoic philosophy and way of life.</p>
+        <div class="tags-list"><span class="tag-chip">history</span></div>
+        <div class="progress-section">
+          <div class="progress-meta">
+            <span>Reading Progress</span>
+            <span>5%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill " style="width: 5%"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="book-card" tabindex="0" data-id="bf5828da-7249-4c10-a8db-b81cc5cb7436">
+      <div class="cover-container">
+        <img class="cover-img" src="covers/bf5828da-7249-4c10-a8db-b81cc5cb7436.jpg" alt="The Old Man and the Sea" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="cover-fallback" style="display:none;">
+          <span class="cover-fallback-icon">📖</span>
+          <span class="cover-fallback-title">The Old Man and the Sea</span>
+        </div>
+        <span class="progress-badge badge-reading">13%</span>
+      </div>
+      <div class="book-info">
+        <h3 class="book-title">The Old Man and the Sea</h3>
+        <div class="book-author">Ernest Hemingway</div>
+        <p class="book-desc">&quot;The Old Man and the Sea&quot; is a novel by Ernest Hemingway and published in 1952. It tells the story of Santiago, an aged, experienced but unlucky Cuban fisherman. The story details his epic struggle to catch a giant marlin far out in the Gulf Stream.
+
+The book studies perseverance and the battles between humanity and nature. It explores honor, pride, and the cycle of life and death. The Old Man and the Sea was a critical and commercial success, winning the Pulitzer Prize for Fiction in 1953 and helping Hemingway win the Nobel Prize in Literature in 1954.</p>
+        <div class="tags-list"><span class="tag-chip">fiction</span></div>
+        <div class="progress-section">
+          <div class="progress-meta">
+            <span>Reading Progress</span>
+            <span>13%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill " style="width: 13%"></div>
+          </div>
+        </div>
+      </div>
+    </article></main>
+    <div class="empty-state" id="emptyState">
+      <div class="empty-state-icon">📖</div>
+      <p>No books match your criteria.</p>
+    </div>
+
+    <!-- Compact Promo -->
+    <section class="promo-compact">
+      <div class="promo-compact-left">
+        <span class="promo-compact-badge">Designed for iPhone &amp; iPad</span>
+        <span class="promo-compact-text">
+          Managed &amp; read with <a href="https://epub.navist.uk" target="_blank" rel="noopener"><strong>Epub Tidy</strong></a> — local AI audio reader &amp; metadata editor.
+        </span>
+      </div>
+      <a href="https://apps.apple.com/us/app/epubtidy-epub-editor-repair/id6795767122?pt=127002958&amp;ct=github&amp;mt=8" target="_blank" rel="noopener noreferrer" class="btn-appstore-compact" title="Download EpubTidy on App Store">
+        <svg viewBox="0 0 814 1000">
+          <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/>
+        </svg>
+        <span>App Store</span>
+      </a>
+    </section>
   </div>
 
+  <!-- Detail Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    <p>Library automatically managed by <a href="https://epub.navist.uk" rel="dofollow" target="_blank">Epub Tidy</a> — Premium EPUB reader &amp; metadata editor.</p>
+    <div class="footer-links">
+      <a href="https://epub.navist.uk" rel="dofollow" target="_blank">Epub Tidy Home</a>
+      <a href="https://apps.apple.com/us/app/epubtidy-epub-editor-repair/id6795767122?pt=127002958&amp;ct=github&amp;mt=8" target="_blank" rel="noopener">App Store</a>
+      <a href="https://github.com/hautvfami" target="_blank" rel="noopener">GitHub @hautvfami</a>
+    </div>
+    <p>Library managed and published with <a href="https://epub.navist.uk" rel="dofollow" target="_blank">Epub Tidy</a> — Premium EPUB reader &amp; metadata editor for iOS.</p>
   </footer>
 
   <script>
-    const books = [{"id":"60579386-c7e5-400f-a6db-5e1b46aa8c0f","title":"Phát Minh Cuối Cùng","author":"James Barrat, Chu Kiên (dịch), Chu Kiên (dịch)","publisher":"Thế Giới","progress":0,"description":"<div>\n<p>Trí tuệ nhân tạo giúp bạn chọn những cuốn sách bạn mua, những bộ phim bạn xem, và thậm chí những người bạn hẹn hò. Nó có trong điện thoại thông minh của bạn và tới đây sẽ lái chiếc xe của bạn. Nó thực hiện hầu hết các giao dịch trên Wall Street, và kiểm soát cơ sở hạ tầng điện, nước và giao thông. Nhưng trí tuệ nhân tạo cũng có thể đe dọa sự tồn tại của con người.</p>\n<p>Chỉ trong một thập kỷ, AI có thể đạt ngang ngửa và sau đó vượt qua trí thông minh của con người. Các công ty và cơ quan chính phủ đang rót hàng tỷ đô-la để thu được một AI với trí thông minh ở cấp độ con người. Một khi AI đã phát triển đến mức này, các nhà khoa học lập luận rằng, nó sẽ có những động lực sống giống như con người. Chúng ta có thể sẽ buộc phải cạnh tranh với một kẻ thù ngoan cường hơn, mạnh mẽ hơn và khác biệt hơn chúng ta tưởng tượng.</p>\n<p>Thông qua việc phỏng vấn với những người có tầm nhìn xa về công nghệ, các cơ quan giám sát công nghiệp, và những hệ thống AI, cuốn sách Phát minh cuối cùng khám phá những nguy cơ của việc theo đuổi AI cao cấp. Cho đến nay, trí thông minh của con người không có đối thủ. Liệu chúng ta có thể cùng tồn tại với những thứ mà trí tuệ của chúng ta trở nên nhỏ bé hơn hẳn? Và liệu chúng sẽ cho phép chúng ta cùng tồn tại?</p></div>","tags":["scienceFiction"],"cover":"covers/60579386-c7e5-400f-a6db-5e1b46aa8c0f.jpg"},{"id":"dd0b63a8-7a92-43b1-b982-1df23022a82a","title":"The Time Machine","author":"H. G. Wells","publisher":"Standard Ebooks","progress":0,"description":"A mysterious inventor travels to a land far off in time.","tags":["fantasy"],"cover":"covers/dd0b63a8-7a92-43b1-b982-1df23022a82a.jpg"},{"id":"e6a69518-17fa-46be-8076-6ca446255d76","title":"Meditations","author":"Marcus Aurelius","publisher":"Standard Ebooks","progress":3,"description":"The personal diary of the Roman Emperor, in which he lays out his thoughts and philosophical musings on the Stoic philosophy and way of life.","tags":["history"],"cover":"covers/e6a69518-17fa-46be-8076-6ca446255d76.jpg"},{"id":"bf5828da-7249-4c10-a8db-b81cc5cb7436","title":"The Old Man and the Sea","author":"Ernest Hemingway","publisher":"epubBooks Classics","progress":13,"description":"\"The Old Man and the Sea\" is a novel by Ernest Hemingway and published in 1952. It tells the story of Santiago, an aged, experienced but unlucky Cuban fisherman. The story details his epic struggle to catch a giant marlin far out in the Gulf Stream.\n\nThe book studies perseverance and the battles between humanity and nature. It explores honor, pride, and the cycle of life and death. The Old Man and the Sea was a critical and commercial success, winning the Pulitzer Prize for Fiction in 1953 and helping Hemingway win the Nobel Prize in Literature in 1954.","tags":["fiction"],"cover":"covers/bf5828da-7249-4c10-a8db-b81cc5cb7436.jpg"}];
-    const grid = document.getElementById('booksGrid');
-    const emptyState = document.getElementById('emptyState');
-    const searchInput = document.getElementById('searchInput');
+    const books = [{"id":"60579386-c7e5-400f-a6db-5e1b46aa8c0f","title":"Phát Minh Cuối Cùng","author":"James Barrat, Chu Kiên (dịch), Chu Kiên (dịch)","publisher":"Thế Giới","progress":0,"description":"<div>\n<p>Trí tuệ nhân tạo giúp bạn chọn những cuốn sách bạn mua, những bộ phim bạn xem, và thậm chí những người bạn hẹn hò. Nó có trong điện thoại thông minh của bạn và tới đây sẽ lái chiếc xe của bạn. Nó thực hiện hầu hết các giao dịch trên Wall Street, và kiểm soát cơ sở hạ tầng điện, nước và giao thông. Nhưng trí tuệ nhân tạo cũng có thể đe dọa sự tồn tại của con người.</p>\n<p>Chỉ trong một thập kỷ, AI có thể đạt ngang ngửa và sau đó vượt qua trí thông minh của con người. Các công ty và cơ quan chính phủ đang rót hàng tỷ đô-la để thu được một AI với trí thông minh ở cấp độ con người. Một khi AI đã phát triển đến mức này, các nhà khoa học lập luận rằng, nó sẽ có những động lực sống giống như con người. Chúng ta có thể sẽ buộc phải cạnh tranh với một kẻ thù ngoan cường hơn, mạnh mẽ hơn và khác biệt hơn chúng ta tưởng tượng.</p>\n<p>Thông qua việc phỏng vấn với những người có tầm nhìn xa về công nghệ, các cơ quan giám sát công nghiệp, và những hệ thống AI, cuốn sách Phát minh cuối cùng khám phá những nguy cơ của việc theo đuổi AI cao cấp. Cho đến nay, trí thông minh của con người không có đối thủ. Liệu chúng ta có thể cùng tồn tại với những thứ mà trí tuệ của chúng ta trở nên nhỏ bé hơn hẳn? Và liệu chúng sẽ cho phép chúng ta cùng tồn tại?</p></div>","tags":["scienceFiction"],"cover":"covers/60579386-c7e5-400f-a6db-5e1b46aa8c0f.jpg"},{"id":"dd0b63a8-7a92-43b1-b982-1df23022a82a","title":"The Time Machine","author":"H. G. Wells","publisher":"Standard Ebooks","progress":0,"description":"A mysterious inventor travels to a land far off in time.","tags":["fantasy"],"cover":"covers/dd0b63a8-7a92-43b1-b982-1df23022a82a.jpg"},{"id":"e6a69518-17fa-46be-8076-6ca446255d76","title":"Meditations","author":"Marcus Aurelius","publisher":"Standard Ebooks","progress":5,"description":"The personal diary of the Roman Emperor, in which he lays out his thoughts and philosophical musings on the Stoic philosophy and way of life.","tags":["history"],"cover":"covers/e6a69518-17fa-46be-8076-6ca446255d76.jpg"},{"id":"bf5828da-7249-4c10-a8db-b81cc5cb7436","title":"The Old Man and the Sea","author":"Ernest Hemingway","publisher":"epubBooks Classics","progress":13,"description":"\"The Old Man and the Sea\" is a novel by Ernest Hemingway and published in 1952. It tells the story of Santiago, an aged, experienced but unlucky Cuban fisherman. The story details his epic struggle to catch a giant marlin far out in the Gulf Stream.\n\nThe book studies perseverance and the battles between humanity and nature. It explores honor, pride, and the cycle of life and death. The Old Man and the Sea was a critical and commercial success, winning the Pulitzer Prize for Fiction in 1953 and helping Hemingway win the Nobel Prize in Literature in 1954.","tags":["fiction"],"cover":"covers/bf5828da-7249-4c10-a8db-b81cc5cb7436.jpg"}];
+const grid = document.getElementById('booksGrid');
+const emptyState = document.getElementById('emptyState');
+const searchInput = document.getElementById('searchInput');
+const filterTabs = document.querySelectorAll('.filter-tab');
+const modalBackdrop = document.getElementById('modalBackdrop');
+const modalClose = document.getElementById('modalClose');
+const modalContent = document.getElementById('modalContent');
 
-    function renderBooks(filtered) {
-      grid.innerHTML = '';
-      if (filtered.length === 0) {
-        emptyState.style.display = 'block';
-        return;
-      }
-      emptyState.style.display = 'none';
+let currentFilter = 'all';
 
-      filtered.forEach(book => {
-        const card = document.createElement('div');
-        card.className = 'book-card';
+function attachCardListeners() {
+  document.querySelectorAll('.book-card').forEach(card => {
+    const id = card.getAttribute('data-id');
+    const book = books.find(b => b.id === id);
+    if (!book) return;
+    card.onclick = () => openModal(book);
+    card.onkeydown = (e) => {
+      if (e.key === 'Enter') openModal(book);
+    };
+  });
+}
 
-        const tagsHtml = (book.tags || []).slice(0, 3)
-          .map(t => '<span class="tag-chip">' + escapeHtml(t) + '</span>').join('');
+function renderBooks() {
+  const q = searchInput.value.toLowerCase().trim();
+  const filtered = books.filter(b => {
+    const matchesQuery = !q ||
+      b.title.toLowerCase().includes(q) ||
+      b.author.toLowerCase().includes(q) ||
+      (b.description && b.description.toLowerCase().includes(q)) ||
+      (b.tags && b.tags.some(t => t.toLowerCase().includes(q)));
 
-        card.innerHTML = `
-          <div class="cover-container">
-            <img class="cover-img" src="${book.cover}" alt="${escapeHtml(book.title)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-            <div class="cover-placeholder" style="display:none;">📖</div>
+    if (!matchesQuery) return false;
+
+    const isFinished = b.progress >= 98;
+    if (currentFilter === 'reading') return b.progress > 0 && !isFinished;
+    if (currentFilter === 'completed') return isFinished;
+    return true;
+  });
+
+  grid.innerHTML = '';
+  if (filtered.length === 0) {
+    emptyState.style.display = 'block';
+    return;
+  }
+  emptyState.style.display = 'none';
+
+  filtered.forEach(book => {
+    const card = document.createElement('article');
+    card.className = 'book-card';
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('data-id', book.id);
+
+    const isFinished = book.progress >= 98;
+    const badgeHtml = isFinished
+      ? '<span class="progress-badge badge-finished">✓ Finished</span>'
+      : (book.progress > 0
+          ? '<span class="progress-badge badge-reading">' + book.progress + '%</span>'
+          : '');
+
+    const tagsHtml = (book.tags || []).slice(0, 3)
+      .map(t => '<span class="tag-chip">' + escapeHtml(t) + '</span>').join('');
+
+    const descHtml = book.description
+      ? '<p class="book-desc">' + escapeHtml(book.description) + '</p>'
+      : '';
+
+    card.innerHTML = `
+      <div class="cover-container">
+        <img class="cover-img" src="${book.cover}" alt="${escapeHtml(book.title)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="cover-fallback" style="display:none;">
+          <span class="cover-fallback-icon">📖</span>
+          <span class="cover-fallback-title">${escapeHtml(book.title)}</span>
+        </div>
+        ${badgeHtml}
+      </div>
+      <div class="book-info">
+        <h3 class="book-title">${escapeHtml(book.title)}</h3>
+        <div class="book-author">${escapeHtml(book.author)}</div>
+        ${descHtml}
+        ${tagsHtml ? '<div class="tags-list">' + tagsHtml + '</div>' : ''}
+        <div class="progress-section">
+          <div class="progress-meta">
+            <span>Reading Progress</span>
+            <span>${book.progress}%</span>
           </div>
-          <div class="book-info">
-            <h3 class="book-title">${escapeHtml(book.title)}</h3>
-            <div class="book-author">${escapeHtml(book.author)}</div>
-            ${tagsHtml ? '<div class="tags-list">' + tagsHtml + '</div>' : ''}
-            <div class="progress-section">
-              <div class="progress-meta">
-                <span>Reading Progress</span>
-                <span>${book.progress}%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: ${book.progress}%"></div>
-              </div>
-            </div>
+          <div class="progress-bar">
+            <div class="progress-fill ${isFinished ? 'completed' : ''}" style="width: ${book.progress}%"></div>
           </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
+        </div>
+      </div>
+    `;
 
-    function escapeHtml(str) {
-      return (str || '').replace(/[&<>'"]/g, tag => ({
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        "'": '&#39;',
-        '"': '&quot;'
-      }[tag] || tag));
-    }
-
-    searchInput.addEventListener('input', (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      const filtered = books.filter(b => 
-        b.title.toLowerCase().includes(q) ||
-        b.author.toLowerCase().includes(q) ||
-        (b.tags && b.tags.some(t => t.toLowerCase().includes(q)))
-      );
-      renderBooks(filtered);
+    card.addEventListener('click', () => openModal(book));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') openModal(book);
     });
 
-    renderBooks(books);
+    grid.appendChild(card);
+  });
+}
+
+function openModal(book) {
+  const isFinished = book.progress >= 98;
+  const tagsHtml = (book.tags || [])
+    .map(t => '<span class="tag-chip">' + escapeHtml(t) + '</span>').join('');
+
+  modalContent.innerHTML = `
+    <div class="modal-body">
+      <div class="modal-cover-wrapper">
+        <img class="modal-cover-img" src="${book.cover}" alt="${escapeHtml(book.title)}" onerror="this.parentElement.innerHTML='<div class=\\'modal-cover-fallback\\'>📖</div>';" />
+      </div>
+      <div class="modal-details">
+        <div class="modal-badges">
+          <span class="modal-status-badge ${isFinished ? 'finished' : 'reading'}">
+            ${isFinished ? '✓ Completed' : book.progress + '% Read'}
+          </span>
+          ${book.publisher ? '<span class="modal-publisher-badge">' + escapeHtml(book.publisher) + '</span>' : ''}
+        </div>
+        <h2 class="modal-title">${escapeHtml(book.title)}</h2>
+        <div class="modal-author">by ${escapeHtml(book.author)}</div>
+        ${tagsHtml ? '<div class="modal-tags">' + tagsHtml + '</div>' : ''}
+
+        <div class="modal-progress-box">
+          <div class="modal-progress-labels">
+            <span>Reading Progress</span>
+            <span><strong>${book.progress}%</strong></span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill ${isFinished ? 'completed' : ''}" style="width: ${book.progress}%"></div>
+          </div>
+        </div>
+
+        <div class="modal-description-section">
+          <h4 class="modal-section-title">About this book</h4>
+          ${book.description
+            ? '<div class="modal-description-text">' + escapeHtml(book.description) + '</div>'
+            : '<p class="modal-description-empty">No synopsis provided in EPUB metadata.</p>'}
+        </div>
+      </div>
+    </div>
+  `;
+  modalBackdrop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modalBackdrop.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+modalClose.addEventListener('click', closeModal);
+modalBackdrop.addEventListener('click', (e) => {
+  if (e.target === modalBackdrop) closeModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
+
+filterTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    filterTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentFilter = tab.getAttribute('data-filter');
+    renderBooks();
+  });
+});
+
+searchInput.addEventListener('input', renderBooks);
+
+function escapeHtml(str) {
+  return (str || '').replace(/[&<>'"]/g, tag => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    "'": '&#39;',
+    '"': '&quot;'
+  }[tag] || tag));
+}
+
+// Bind initial static cards if present, otherwise render dynamically
+if (grid.children.length > 0) {
+  attachCardListeners();
+} else {
+  renderBooks();
+}
   </script>
 </body>
 </html>

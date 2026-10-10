@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "owner": "hautvfami",
-  "generatedAt": "2026-10-10T05:25:14.766322Z",
+  "generatedAt": "2026-10-10T07:29:27.293947Z",
   "totalBooks": 4,
   "books": [
     {
@@ -43,12 +43,12 @@
       "description": "The personal diary of the Roman Emperor, in which he lays out his thoughts and philosophical musings on the Stoic philosophy and way of life.",
       "publishedAt": "2014-05-25T07:00:00.000",
       "chapterCount": 17,
-      "readingProgress": 0.034864416159380185,
+      "readingProgress": 0.04814609850581074,
       "tags": [
         "history"
       ],
       "coverImage": "covers/e6a69518-17fa-46be-8076-6ca446255d76.jpg",
-      "lastReadAt": "2026-10-10T12:22:08.000"
+      "lastReadAt": "2026-10-10T12:33:07.000"
     },
     {
       "id": "bf5828da-7249-4c10-a8db-b81cc5cb7436",
