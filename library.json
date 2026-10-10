@@ -1,8 +1,8 @@
 {
   "version": "1.0",
   "owner": "hautvfami",
-  "generatedAt": "2026-10-10T10:37:57.566975Z",
-  "totalBooks": 4,
+  "generatedAt": "2026-10-10T11:51:53.564891Z",
+  "totalBooks": 5,
   "books": [
     {
       "id": "60579386-c7e5-400f-a6db-5e1b46aa8c0f",
@@ -35,6 +35,21 @@
       "coverImage": "covers/dd0b63a8-7a92-43b1-b982-1df23022a82a.jpg"
     },
     {
+      "id": "1c10c22b-845e-4c5a-83b5-3966897e6e19",
+      "title": "Around the World in Eighty Days",
+      "author": "Jules Verne",
+      "publisher": "Standard Ebooks",
+      "languageCode": "en-GB",
+      "description": "On a bet, an eccentric Victorian gentleman races to circumnavigate the globe.",
+      "publishedAt": "2014-05-25T07:00:00.000",
+      "chapterCount": 41,
+      "readingProgress": 0.0,
+      "tags": [
+        "history"
+      ],
+      "coverImage": "covers/1c10c22b-845e-4c5a-83b5-3966897e6e19.jpg"
+    },
+    {
       "id": "e6a69518-17fa-46be-8076-6ca446255d76",
       "title": "Meditations",
       "author": "Marcus Aurelius",
@@ -64,7 +79,7 @@
         "fiction"
       ],
       "coverImage": "covers/bf5828da-7249-4c10-a8db-b81cc5cb7436.jpg",
-      "lastReadAt": "2026-10-10T14:51:15.000"
+      "lastReadAt": "2026-10-10T18:28:30.000"
     }
   ]
 }
